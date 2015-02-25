@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Schoo</string>
+    <string name="action_settings">Inställningar</string>
+    <string name="hello_world">Hej Världen!</string>
+    <string name="help_and_feedback">Hjälp och Feedback</string>
+    <string name="log_out">Logga ut</string>
+</resources>

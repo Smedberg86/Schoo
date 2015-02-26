@@ -5,4 +5,9 @@
     <string name="hello_world">Hej Världen!</string>
     <string name="help_and_feedback">Hjälp och Feedback</string>
     <string name="log_out">Logga ut</string>
+    <string name="drawer_close">Stäng</string>
+    <string name="drawer_open">Öppna</string>
+    <string name="hello_blank_fragment">Hej blankt fragment</string>
+    <string name="title_activity_settings">Inställningar</string>
+    <string name="title_activity_help_and_feedback">Hjälp och Feedback</string>
 </resources>

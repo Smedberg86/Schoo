@@ -20,7 +20,7 @@
             android:name=".HelpAndFeedback"
             android:label="@string/title_activity_help_and_feedback">
             <meta-data
-                android:name="android.support.PARENT.ACTIVITY"
+                android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
     </application>

@@ -45,7 +45,7 @@ public class MainActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-        if (id == R.id.action_help_and_feedback) {
+        if (id==R.id.action_help_and_feedback) {
             startActivity(new Intent(this, HelpAndFeedback.class));
         }
 

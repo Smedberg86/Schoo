@@ -40,7 +40,7 @@ public class HelpAndFeedback extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-        if (id==android.R.id.home){
+        if (id == android.R.id.home) {
             NavUtils.navigateUpFromSameTask(this);
         }
 

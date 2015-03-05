@@ -32,7 +32,7 @@ public class NavigationDrawerFragment extends Fragment {
     private boolean mUserLearnedDrawer;
     private boolean mFromSavedInstanceState;
     private View containerView;
-
+    private boolean isDrawerOpened=false;
     public NavigationDrawerFragment() {
         // Required empty public constructor
     }

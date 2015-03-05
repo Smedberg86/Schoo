@@ -29,14 +29,14 @@ public class RobsAdapter extends RecyclerView.Adapter<RobsAdapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        Information current=data.get(position);
+        Information current = data.get(position);
         holder.title.setText(current.title);
         holder.icon.setImageResource(current.iconId);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return data.size();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {

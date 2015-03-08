@@ -49,4 +49,5 @@ public class RobsAdapter extends RecyclerView.Adapter<RobsAdapter.MyViewHolder> 
             icon = (ImageView) itemView.findViewById(R.id.navigationListIcon);
         }
     }
+
 }

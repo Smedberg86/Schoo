@@ -10,6 +10,9 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string-array name="betting_tabs">
+        <item>Played games</item>
+        <item>Upcoming games</item>
+    </string-array>
 
 </resources>

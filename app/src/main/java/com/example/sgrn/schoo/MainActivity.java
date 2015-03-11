@@ -90,11 +90,6 @@ public class MainActivity extends ActionBarActivity {
         }
 
         @Override
-        public CharSequence getPageTitle(int position) {
-            return tabs[position];
-        }
-
-        @Override
         public int getCount() {
             return 2;
         }

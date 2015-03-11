@@ -40,10 +40,15 @@ public class MainActivity extends ActionBarActivity {
         mPager= (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
         mTabs= (SlidingTabLayout) findViewById(R.id.main_activity_tabs);
+        mTabs.setDistributeEvenly(true);
+        mTabs.setCustomTabView(R.layout.custom_tab_view, R.id.mainTabText);
+        mTabs.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
+            @Override
+            public int getIndicatorColor(int position) {
+                return getResources().getColor(R.color.textColor);
+            }
+        });
         mTabs.setViewPager(mPager);
-
-
-
 
 
     }

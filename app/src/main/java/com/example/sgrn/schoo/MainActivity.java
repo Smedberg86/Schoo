@@ -42,10 +42,11 @@ public class MainActivity extends ActionBarActivity {
         mTabs= (SlidingTabLayout) findViewById(R.id.main_activity_tabs);
         mTabs.setDistributeEvenly(true);
         mTabs.setCustomTabView(R.layout.custom_tab_view, R.id.mainTabText);
+        mTabs.setBackgroundColor(getResources().getColor(R.color.primaryColor));
         mTabs.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
             @Override
             public int getIndicatorColor(int position) {
-                return getResources().getColor(R.color.textColor);
+                return getResources().getColor(R.color.accentColor);
             }
         });
         mTabs.setViewPager(mPager);
@@ -92,6 +93,11 @@ public class MainActivity extends ActionBarActivity {
         public Fragment getItem(int position) {
             MyFragment myFragment=MyFragment.getInstance(position);
             return myFragment;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return tabs[position];
         }
 
         @Override

@@ -8,39 +8,77 @@
         android:id="@+id/homeTeam2"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:paddingTop="6dp"
-        android:text="Arsenal"
-        android:textColor="#000"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:layout_toLeftOf="@+id/vs"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/vs"
+        android:gravity="center"
+        android:paddingTop="6dp"
+        android:text="Home Team"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/vs"
-        android:layout_width="32dp"
+        android:layout_width="48dp"
         android:layout_height="48dp"
-        android:text="VS."
-        android:textColor="#000"
-        android:paddingTop="6dp"
-        android:textStyle="bold"
-        android:gravity="center"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="6dp"
+        android:text="VS"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/awayTeam2"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:paddingTop="6dp"
-        android:text="Tottenham"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:textColor="#000"
-        android:layout_toRightOf="@+id/vs"
-        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_toRightOf="@+id/vs"
+        android:gravity="center"
+        android:paddingTop="6dp"
+        android:text="Away Team"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/homeGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/homeTeam2"
+        android:layout_toLeftOf="@+id/vs"
+        android:layout_toStartOf="@+id/vs"
+        android:gravity="center"
+        android:text="Home Goals"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/awayTeam2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/awayTeam2"
+        android:layout_alignTop="@+id/homeGoals"
+        android:gravity="center"
+        android:text="Away Goals"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vs"
+        android:layout_toLeftOf="@+id/awayTeam2"
+        android:layout_toRightOf="@+id/homeTeam2"
+        android:layout_toStartOf="@+id/awayTeam2"
+        android:gravity="center"
+        android:text="1X2"
+        android:textColor="#000" />
+
 </RelativeLayout>

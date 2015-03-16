@@ -21,6 +21,8 @@ import com.example.sgrn.schoo.Tabs.SlidingTabLayout;
 
 public class MainActivity extends ActionBarActivity {
 
+    public static final int UPCOMING_GAMES = 0;
+    public static final int PLAYED_GAMES = 1;
     private Toolbar toolbar;
     private ViewPager mPager;
     private SlidingTabLayout mTabs;
@@ -84,15 +86,29 @@ public class MainActivity extends ActionBarActivity {
     class MyPagerAdapter extends FragmentPagerAdapter{
 
         String[] tabs;
+
+        @Override
+        public int getCount() {
+            return 2;
+        }
         public MyPagerAdapter(FragmentManager fm) {
             super(fm);
             tabs=getResources().getStringArray(R.array.betting_tabs);
         }
 
         @Override
-        public Fragment getItem(int position) {
-            MyFragment myFragment=MyFragment.getInstance(position);
-            return myFragment;
+        public Fragment getItem(int num) {
+            Fragment fragment=null;
+            switch (num){
+                case PLAYED_GAMES:
+                    fragment = PlayedGames.newInstance("", "");
+                    break;
+                case UPCOMING_GAMES:
+                    fragment = UpcomingGames.newInstance("", "");
+                    break;
+            }
+
+            return fragment;
         }
 
         @Override
@@ -100,10 +116,7 @@ public class MainActivity extends ActionBarActivity {
             return tabs[position];
         }
 
-        @Override
-        public int getCount() {
-            return 2;
-        }
+
     }
     public static class MyFragment extends Fragment{
         public static MyFragment getInstance(int position){
